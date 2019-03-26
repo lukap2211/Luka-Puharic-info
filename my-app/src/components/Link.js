@@ -11,6 +11,10 @@ const Link = styled.a`
   &:hover {
     color: var(--title-main);
   }
+  @media (max-width: 700px) {
+    display: table;
+  }
+
   `
 
 class HeaderLink extends React.Component {
