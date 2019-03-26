@@ -2,7 +2,6 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://lukap2211.github.io/Luka-Puharic-info",
   "dependencies": {
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
