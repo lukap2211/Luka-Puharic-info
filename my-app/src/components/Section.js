@@ -8,6 +8,11 @@ const SectionItem = styled.section `
   display: grid;
   grid-template-columns: 190px auto;
   margin: 0 0 50px;
+  @media (max-width: 700px) {
+    display: block;
+    overflow: hidden;
+    margin: 0 0 40px;
+  }
   `
 
 const SectionTitle = styled.h2 `
@@ -17,6 +22,9 @@ const SectionTitle = styled.h2 `
   color: #999;
   min-width: 190px;
   text-transform: capitalize;
+  @media (max-width: 700px) {
+    margin: 20px 0;
+  }
   `
 
 const SectionInfo = styled.div `

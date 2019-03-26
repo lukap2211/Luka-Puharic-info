@@ -12,6 +12,10 @@ const ExpTop = styled.header `
   div + div {
     justify-self: right;
   }
+  @media (max-width: 700px) {
+    display: block;
+    overflow: hidden;
+  }
   `
 
 const ExpCompany = styled.h4 `
