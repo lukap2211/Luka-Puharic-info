@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import Skills from './Skills';
 import Experience from './Experience';
+import Education from './Education';
 
 const SectionItem = styled.section `
   display: grid;
@@ -25,11 +26,16 @@ const SectionInfo = styled.div `
 
 class Section extends React.Component {
   render() {
+
+    const { type, data } = this.props
+
     const sectionInfo = (data) => {
       if (Array.isArray(data)) {
         return data.map((item, i) => {
-          if (this.props.type === 'skills') {
+          if (type === 'skills') {
             return <Skills data={item} key={i}/>
+          } else if (type === 'education') {
+            return <education  data={item} key={i}/>
           } else {
             return <Experience data={item} key={i}/>
           }
@@ -41,8 +47,8 @@ class Section extends React.Component {
 
     return (
       <SectionItem>
-        <SectionTitle>{ this.props.type }</SectionTitle>
-        <SectionInfo>{ sectionInfo(this.props.data) }</SectionInfo>
+        <SectionTitle>{type}</SectionTitle>
+        <SectionInfo>{sectionInfo(data)}</SectionInfo>
       </SectionItem>
     )
   }

@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Section from './components/Section';
 import Footer from './components/Footer';
 
-const { profile, profile: { description, summary }, experience, skills } = data
+const { profile, profile: { description, summary }, experience, education, skills } = data
 
 class App extends Component {
   render() {
@@ -14,6 +14,7 @@ class App extends Component {
         <Section type="profile" data={description} />
         <Section type="summary" data={summary} />
         <Section type="experience" data={experience} />
+        <Section type="education" data={education} />
         <Section type="skills" data={skills} />
         <Footer name={profile.personal.name} />
       </div>
