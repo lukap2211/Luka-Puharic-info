@@ -11,7 +11,7 @@ const SectionItem = styled.section `
   @media (max-width: 700px) {
     display: block;
     overflow: hidden;
-    margin: 0 0 40px;
+    margin: 20px 0;
   }
   `
 
@@ -19,11 +19,12 @@ const SectionTitle = styled.h2 `
   margin: 0;
   padding: 0;
   font-size: 1em;
-  color: #999;
+  color: var(--faded);
   min-width: 190px;
   text-transform: capitalize;
   @media (max-width: 700px) {
-    margin: 20px 0;
+    margin: 10px 0 30px;
+    font-size: 3em;
   }
   `
 
@@ -54,8 +55,8 @@ class Section extends React.Component {
     }
 
     return (
-      <SectionItem>
-        <SectionTitle id={type}>{type}</SectionTitle>
+      <SectionItem id={type}>
+        <SectionTitle>{type}</SectionTitle>
         <SectionInfo>{sectionInfo(data)}</SectionInfo>
       </SectionItem>
     )

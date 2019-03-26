@@ -18,22 +18,10 @@ const HamburgerIcon = styled.div `
     transition: 0.4s;
   }
 
-  .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-
-  .change .bar2 {opacity: 0;}
-
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-  }
-
   `
 const NavMenu = styled.nav `
   position: fixed;
-  right: -140px;
+  right: -125px;
   top: 0;
   background-color: var(--title-main);
   z-index: 2;
@@ -41,6 +29,18 @@ const NavMenu = styled.nav `
 
   &.on {
     right: 0;
+
+    .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .bar2 {opacity: 0;}
+
+    .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
   }
 
   ul {
@@ -103,18 +103,18 @@ class Nav extends React.Component {
     return (
 
       <NavMenu className={this.state.menuOn} >
-        <HamburgerIcon onClick= {this.menuToggle} >
+        <HamburgerIcon onClick={this.menuToggle} >
           <div className="bar1"></div>
           <div className="bar2"></div>
           <div className="bar3"></div>
         </HamburgerIcon>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#summary">Summary</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><a onClick={this.menuToggle} href="#home">Info</a></li>
+          <li><a onClick={this.menuToggle} href="#profile">Profile</a></li>
+          <li><a onClick={this.menuToggle} href="#summary">Summary</a></li>
+          <li><a onClick={this.menuToggle} href="#experience">Experience</a></li>
+          <li><a onClick={this.menuToggle} href="#education">Education</a></li>
+          <li><a onClick={this.menuToggle} href="#skills">Skills</a></li>
         </ul>
       </NavMenu>
     )
