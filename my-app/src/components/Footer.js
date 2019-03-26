@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 const FooterWrap = styled.footer `
   color: var(--faded);
+  margin: 50px auto 450px;
   `
 
 class Footer extends React.Component {

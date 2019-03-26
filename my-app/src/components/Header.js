@@ -41,7 +41,7 @@ const formatPhoneNumber = (phoneNumberString) => {
 }
 
 const Header = props => (
-  <header>
+  <header id="home">
     <Title>{props.profile.personal.name}</Title>
     <ContactInfo>
       <div>{formatPhoneNumber(props.profile.personal.phone)}</div>

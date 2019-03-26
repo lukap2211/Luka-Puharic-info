@@ -55,7 +55,7 @@ class Section extends React.Component {
 
     return (
       <SectionItem>
-        <SectionTitle>{type}</SectionTitle>
+        <SectionTitle id={type}>{type}</SectionTitle>
         <SectionInfo>{sectionInfo(data)}</SectionInfo>
       </SectionItem>
     )
