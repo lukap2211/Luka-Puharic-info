@@ -14,7 +14,7 @@ const ContactInfo = styled.div `
     position: relative;
     top: auto;
     right: auto;
-    margin: 0 0 40px;
+    margin: 0 0 20px;
   }
   `
 
@@ -25,9 +25,10 @@ const Title = styled.h1 `
   width: 0;
   break-word: normal;
   line-height: 1;
-  margin:0 0 50px;
+  margin: 0;
+  padding: 0 0 50px;
   @media (max-width: 700px) {
-    margin:0 0 30px;
+    padding: 20px 0 30px;
   }
   `
 
@@ -41,8 +42,8 @@ const formatPhoneNumber = (phoneNumberString) => {
 }
 
 const Header = props => (
-  <header id="home">
-    <Title>{props.profile.personal.name}</Title>
+  <header>
+    <Title id="home">{props.profile.personal.name}</Title>
     <ContactInfo>
       <div>{formatPhoneNumber(props.profile.personal.phone)}</div>
       <Link link={props.profile.personal.email} />

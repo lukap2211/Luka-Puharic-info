@@ -11,7 +11,7 @@ const SectionItem = styled.section `
   @media (max-width: 700px) {
     display: block;
     overflow: hidden;
-    margin: 0 0 40px;
+    margin: 0 0 20px;
   }
   `
 
@@ -23,7 +23,7 @@ const SectionTitle = styled.h2 `
   min-width: 190px;
   text-transform: capitalize;
   @media (max-width: 700px) {
-    margin: 20px 0;
+    margin: 30px 0;
   }
   `
 
@@ -54,8 +54,8 @@ class Section extends React.Component {
     }
 
     return (
-      <SectionItem>
-        <SectionTitle id={type}>{type}</SectionTitle>
+      <SectionItem id={type}>
+        <SectionTitle>{type}</SectionTitle>
         <SectionInfo>{sectionInfo(data)}</SectionInfo>
       </SectionItem>
     )
