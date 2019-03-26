@@ -14,9 +14,9 @@
       "github": "https://github.com/lukap2211",
       "gravatar": "https://s.gravatar.com/avatar/f09ca73d86b2b35e61b201cdebbec465?s=200"
     },
-    "desc": "Experienced Front End developer with more than 15 years of experience and expertise in HTML, CSS, JS, SEO."
+    "description": "Experienced Front End developer with more than 15 years of experience and expertise in HTML, CSS, JS, SEO.",
+    "summary": "Specialized in web responsive & mobile first approach, automated & enhanced workflows, best practices, and coding standards. I am quick to grasp new ideas and concepts and to develop innovative and creative solutions to problems"
   },
-  "summary": "Specialized in web responsive & mobile first approach, automated & enhanced workflows, best practices, and coding standards. I am quick to grasp new ideas and concepts and to develop innovative and creative solutions to problems",
   "experience": [
   {
     "dateFrom": "June 2017",

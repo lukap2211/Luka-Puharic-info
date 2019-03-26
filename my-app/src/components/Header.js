@@ -1,6 +1,16 @@
 import React from "react";
 import styled from 'styled-components'
 
+const ContactInfo = styled.div `
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  color: var(--faded);
+  > div {
+    margin-bottom: 5px;
+  }
+`
+
 const Title = styled.h1 `
   font-size: 4em;
   text-align: left;
@@ -11,8 +21,14 @@ const Title = styled.h1 `
   `
 
 const Header = props => (
-  <header className="top">
-      <Title>{ props.profile.personal.name }</Title>
+  <header>
+    <Title>{props.profile.personal.name}</Title>
+    <ContactInfo>
+      <div>{props.profile.personal.phone}</div>
+      <div>{props.profile.personal.email}</div>
+      <div>{props.profile.social.linkedin}</div>
+      <div>{props.profile.social.github}</div>
+    </ContactInfo>
   </header>
 )
 
