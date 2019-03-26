@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
+import Link from './Link';
 
 const ContactInfo = styled.div `
   position: absolute;
@@ -18,16 +19,27 @@ const Title = styled.h1 `
   width: 0;
   break-word: normal;
   line-height: 1;
+  margin:0 0 50px;
   `
+
+const formatPhoneNumber = (phoneNumberString) => {
+  const cleaned = ('' + phoneNumberString).replace(/\D/g, '')
+  const match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/)
+  if (match) {
+    return '+1 (' + match[1] + ') ' + match[2] + '-' + match[3]
+  }
+  return null
+}
 
 const Header = props => (
   <header>
     <Title>{props.profile.personal.name}</Title>
     <ContactInfo>
-      <div>{props.profile.personal.phone}</div>
-      <div>{props.profile.personal.email}</div>
-      <div>{props.profile.social.linkedin}</div>
-      <div>{props.profile.social.github}</div>
+      <div>{formatPhoneNumber(props.profile.personal.phone)}</div>
+      <Link link={props.profile.personal.email} />
+      <br/>
+      <Link link={props.profile.social.linkedin} />
+      <Link link={props.profile.social.github} />
     </ContactInfo>
   </header>
 )

@@ -14,7 +14,7 @@ const ExpTop = styled.header `
   }
   `
 
-const ExpCompany = styled.div `
+const ExpCompany = styled.h4 `
   font-weight: bold;
   margin: 5px 0;
   `
@@ -23,12 +23,13 @@ const ExpLocation = styled.div `
   color: var(--faded);
   `
 
-const ExpDescription = styled.div `
+const ExpDescription = styled.p `
   margin: 5px 0;
   `
 
-const ExpTechnologies = styled.div `
+const ExpTechnologies = styled.p `
   font-style: italic;
+  margin: 5px 0;
   `
 
 class Experience extends React.Component {
@@ -36,11 +37,9 @@ class Experience extends React.Component {
 
     const { dateFrom, dateTo, title, company, location, description, technologies } = this.props.data
 
-    console.log("description", description)
-
     function hasDescriptions(description) {
       if (Array.isArray(description)) {
-        return description.map(desc => <ExpDescription>{desc}</ExpDescription>)
+        return description.map((desc, i) => <ExpDescription key={i}>{desc}</ExpDescription>)
       } else {
         return <ExpDescription>{description}</ExpDescription>
       }
