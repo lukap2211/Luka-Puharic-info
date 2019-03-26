@@ -10,7 +10,13 @@ const ContactInfo = styled.div `
   > div {
     margin-bottom: 5px;
   }
-`
+  @media (max-width: 700px) {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 0 0 40px;
+  }
+  `
 
 const Title = styled.h1 `
   font-size: 4em;
@@ -20,6 +26,9 @@ const Title = styled.h1 `
   break-word: normal;
   line-height: 1;
   margin:0 0 50px;
+  @media (max-width: 700px) {
+    margin:0 0 30px;
+  }
   `
 
 const formatPhoneNumber = (phoneNumberString) => {
