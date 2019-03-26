@@ -19,11 +19,12 @@ const SectionTitle = styled.h2 `
   margin: 0;
   padding: 0;
   font-size: 1em;
-  color: #999;
+  color: var(--faded);
   min-width: 190px;
   text-transform: capitalize;
   @media (max-width: 700px) {
     margin: 30px 0;
+    font-size: 3em;
   }
   `
 

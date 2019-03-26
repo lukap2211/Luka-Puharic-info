@@ -15,16 +15,23 @@ const ExpTop = styled.header `
   @media (max-width: 700px) {
     display: block;
     overflow: hidden;
+    font-size: 1.2em;
   }
   `
 
 const ExpCompany = styled.h4 `
   font-weight: bold;
   margin: 5px 0;
+  @media (max-width: 700px) {
+    font-size: 1.5em;
+  }
   `
 
 const ExpLocation = styled.div `
   color: var(--faded);
+  @media (max-width: 700px) {
+    font-size: 1.2em;
+  }
   `
 
 const ExpDescription = styled.p `

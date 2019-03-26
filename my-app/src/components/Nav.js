@@ -109,7 +109,7 @@ class Nav extends React.Component {
           <div className="bar3"></div>
         </HamburgerIcon>
         <ul>
-          <li><a onClick={this.menuToggle} href="#home">Home</a></li>
+          <li><a onClick={this.menuToggle} href="#home">Info</a></li>
           <li><a onClick={this.menuToggle} href="#profile">Profile</a></li>
           <li><a onClick={this.menuToggle} href="#summary">Summary</a></li>
           <li><a onClick={this.menuToggle} href="#experience">Experience</a></li>
