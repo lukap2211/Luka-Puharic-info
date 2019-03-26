@@ -35,7 +35,7 @@ class Section extends React.Component {
           if (type === 'skills') {
             return <Skills data={item} key={i}/>
           } else if (type === 'education') {
-            return <Education  data={item} key={i}/>
+            return <Education data={item} key={i}/>
           } else {
             return <Experience data={item} key={i}/>
           }
