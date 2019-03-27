@@ -21,7 +21,7 @@ const HamburgerIcon = styled.div `
   `
 const NavMenu = styled.nav `
   position: fixed;
-  right: -125px;
+  right: -135px;
   top: 0;
   padding: 10px 0;
   background-color: var(--title-main);
