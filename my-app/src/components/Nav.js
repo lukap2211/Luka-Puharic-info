@@ -23,6 +23,7 @@ const NavMenu = styled.nav `
   position: fixed;
   right: -125px;
   top: 0;
+  padding: 10px 0;
   background-color: var(--title-main);
   z-index: 2;
   transition: all .5s;
@@ -46,45 +47,37 @@ const NavMenu = styled.nav `
   ul {
     margin: 0;
     padding: 0;
+    width: 135px;
     list-style: none;
     display: flex;
-    flex-direction: column;
-  }
-
-  li {
-    flex: 1;
-    text-align: center;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  li.logo {
-    max-width: 0;
-    overflow: hidden;
-    background: white;
-    transition: all 0.5s;
-    font-weight: 600;
-    font-size: 30px;
+  ul li {
+    display: flex;
+    justify-content: space-between;
   }
 
-  li.logo a {
-    color: black;
-  }
-
-  a {
+  ul li a {
     text-decoration: none;
-    padding: 20px;
-    display: inline-block;
+    padding: 15px 20px;
     color: white;
     transition: all 0.2s;
-    text-transform: uppercase;
   }
 
   @media (min-width: 600px) {
     display: none;
   }
+  `
 
+const Avatar = styled.div`
+  height: 80px;
+  width: 80px;
+  background: transparent url("https://avatars0.githubusercontent.com/u/391727?v=4") center center;
+  background-size: cover;
+  border-radius: 40px;
   `
 
 class Nav extends React.Component {
@@ -109,7 +102,7 @@ class Nav extends React.Component {
           <div className="bar3"></div>
         </HamburgerIcon>
         <ul>
-          <li><a onClick={this.menuToggle} href="#home">Info</a></li>
+          <li><a onClick={this.menuToggle} href="#home"><Avatar/></a></li>
           <li><a onClick={this.menuToggle} href="#profile">Profile</a></li>
           <li><a onClick={this.menuToggle} href="#summary">Summary</a></li>
           <li><a onClick={this.menuToggle} href="#experience">Experience</a></li>
