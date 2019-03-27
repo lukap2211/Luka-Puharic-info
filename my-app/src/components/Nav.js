@@ -75,7 +75,7 @@ const NavMenu = styled.nav `
 const Avatar = styled.div`
   height: 80px;
   width: 80px;
-  background: transparent url("https://avatars0.githubusercontent.com/u/391727?v=4") center center;
+  background: transparent url("${props => props.profileImage}") center center;
   background-size: cover;
   border-radius: 40px;
   `
@@ -93,6 +93,8 @@ class Nav extends React.Component {
 
   render() {
 
+    const { profileImage } = this.props
+
     return (
 
       <NavMenu className={this.state.menuOn} >
@@ -102,7 +104,7 @@ class Nav extends React.Component {
           <div className="bar3"></div>
         </HamburgerIcon>
         <ul>
-          <li><a onClick={this.menuToggle} href="#home"><Avatar/></a></li>
+          <li><a onClick={this.menuToggle} href="#home"><Avatar profileImage={profileImage}/></a></li>
           <li><a onClick={this.menuToggle} href="#profile">Profile</a></li>
           <li><a onClick={this.menuToggle} href="#summary">Summary</a></li>
           <li><a onClick={this.menuToggle} href="#experience">Experience</a></li>

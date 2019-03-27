@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Section from './components/Section';
 import Footer from './components/Footer';
 
-const { profile, profile: { description, summary }, experience, education, skills } = data
+const { profile, profile: { description, summary, social: { linkedinImg: profileImage } }, experience, education, skills } = data
 
 
 class App extends Component {
@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <Nav />
+        <Nav profileImage={profileImage}/>
         <Header profile={profile} />
         <Section type="profile" data={description} />
         <Section type="summary" data={summary} />
