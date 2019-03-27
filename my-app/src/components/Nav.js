@@ -21,7 +21,7 @@ const HamburgerIcon = styled.div `
   `
 const NavMenu = styled.nav `
   position: fixed;
-  right: -115px;
+  right: -125px;
   top: 0;
   padding: 10px 0;
   background-color: var(--title-main);
@@ -47,7 +47,7 @@ const NavMenu = styled.nav `
   ul {
     margin: 0;
     padding: 0;
-    width: 125px;
+    width: 135px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -61,13 +61,10 @@ const NavMenu = styled.nav `
   }
 
   ul li a {
-    padding: 10px 0;
     text-decoration: none;
+    padding: 15px 20px;
     color: white;
     transition: all 0.2s;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
   }
 
   @media (min-width: 600px) {

@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Section from './components/Section';
 import Footer from './components/Footer';
 
-const { profile, profile: { description, summary}, experience, education, skills } = data
+const { profile, profile: { description, summary }, experience, education, skills } = data
 
 
 class App extends Component {
