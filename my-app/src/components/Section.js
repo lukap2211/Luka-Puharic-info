@@ -26,6 +26,7 @@ const SectionInfo = styled.div `
   color: #000;
   grid-column-start: 4;
   grid-column-end: span 9;
+  overflow: hidden;
   `
 
 class Section extends React.Component {
