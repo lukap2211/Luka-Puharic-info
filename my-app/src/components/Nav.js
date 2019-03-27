@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
+import Avatar from './Avatar'
 
 const HamburgerIcon = styled.div `
   display: inline-block;
@@ -23,6 +24,7 @@ const NavMenu = styled.nav `
   position: fixed;
   right: -125px;
   top: 0;
+  padding: 0 0 10px;
   background-color: var(--title-main);
   z-index: 2;
   transition: all .5s;
@@ -46,39 +48,27 @@ const NavMenu = styled.nav `
   ul {
     margin: 0;
     padding: 0;
+    width: 125px;
     list-style: none;
     display: flex;
-    flex-direction: column;
-  }
-
-  li {
-    flex: 1;
-    text-align: center;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  li.logo {
-    max-width: 0;
-    overflow: hidden;
-    background: white;
-    transition: all 0.5s;
-    font-weight: 600;
-    font-size: 30px;
+  ul li {
+    display: flex;
+    justify-content: space-between;
   }
 
-  li.logo a {
-    color: black;
-  }
-
-  a {
+  ul li a {
+    padding: 15px 0;
     text-decoration: none;
-    padding: 20px;
-    display: inline-block;
     color: white;
     transition: all 0.2s;
     text-transform: uppercase;
+    text-align: center;
+    display: block;
   }
 
   @media (min-width: 600px) {
@@ -108,8 +98,8 @@ class Nav extends React.Component {
           <div className="bar2"></div>
           <div className="bar3"></div>
         </HamburgerIcon>
+        <a onClick={this.menuToggle} href="#home"><Avatar data={this.props.data} /></a>
         <ul>
-          <li><a onClick={this.menuToggle} href="#home">Info</a></li>
           <li><a onClick={this.menuToggle} href="#profile">Profile</a></li>
           <li><a onClick={this.menuToggle} href="#summary">Summary</a></li>
           <li><a onClick={this.menuToggle} href="#experience">Experience</a></li>
