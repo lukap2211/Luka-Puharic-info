@@ -6,7 +6,7 @@ const ContactInfo = styled.div `
   color: var(--faded);
   grid-column-start: 6;
   grid-column-end: span 7;
-  justify-self: end;
+  place-self: end;
   > div {
     margin-bottom: 5px;
   }
@@ -18,11 +18,12 @@ const ContactInfo = styled.div `
 const Title = styled.h1 `
   grid-column-start: 1;
   grid-column-end: span 3;
+  place-self: center start;
   font-size: 3.5em;
   color: var(--title-main);
   line-height: 1;
   margin: 0;
-  padding: 0 0 20px;
+  padding: 0;
   width: 0;
   break-word: normal;
 
