@@ -8,39 +8,36 @@ const ExpWrap = styled.div `
 const ExpTop = styled.header `
   display: grid;
   grid-template-columns: auto auto;
+  text-transform: uppercase;
+  font-size:0.8em;
   color: var(--faded);
   div + div {
-    justify-self: right;
-  }
-  @media (max-width: 700px) {
-    display: block;
-    overflow: hidden;
-    font-size: 1.2em;
+    justify-self: end;
   }
   `
 
-const ExpCompany = styled.h4 `
+const ExpCompany = styled.h3 `
   font-weight: bold;
   margin: 5px 0;
-  @media (max-width: 700px) {
+  @media (max-width: 600px) {
     font-size: 1.5em;
   }
   `
 
 const ExpLocation = styled.div `
   color: var(--faded);
-  @media (max-width: 700px) {
-    font-size: 1.2em;
+  @media (max-width: 600px) {
+    font-size: 1em;
   }
   `
 
 const ExpDescription = styled.p `
-  margin: 5px 0;
+  margin: 10px 0;
   `
 
 const ExpTechnologies = styled.p `
   font-style: italic;
-  margin: 5px 0;
+  margin: 10px 0;
   `
 
 class Experience extends React.Component {
@@ -65,13 +62,11 @@ class Experience extends React.Component {
     return (
       <ExpWrap>
         <ExpTop>
-          <div>{title}</div>
+          <div>{location}</div>
           <div>{dateFrom} - {dateTo}</div>
         </ExpTop>
-        <div>
-          <ExpCompany>{company}</ExpCompany>
-          <ExpLocation>{location}</ExpLocation>
-        </div>
+        <ExpCompany>{company}</ExpCompany>
+        <ExpLocation>{title}</ExpLocation>
         {hasDescriptions(description)}
         {hasTechnologies(technologies)}
 

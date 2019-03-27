@@ -3,32 +3,31 @@ import styled from 'styled-components'
 import Link from './Link';
 
 const ContactInfo = styled.div `
-  position: absolute;
-  top: 40px;
-  right: 40px;
   color: var(--faded);
+  grid-column-start: 6;
+  grid-column-end: span 7;
+  justify-self: end;
   > div {
     margin-bottom: 5px;
   }
-  @media (max-width: 700px) {
-    position: relative;
-    top: auto;
-    right: auto;
+  @media (max-width: 600px) {
     margin: 0 0 20px;
   }
   `
 
 const Title = styled.h1 `
-  font-size: 4em;
-  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  font-size: 3.5em;
   color: var(--title-main);
-  width: 0;
-  break-word: normal;
   line-height: 1;
   margin: 0;
-  padding: 0 0 50px;
-  @media (max-width: 700px) {
-    padding: 20px 0 30px;
+  padding: 0 0 20px;
+  width: 0;
+  break-word: normal;
+
+  @media (max-width: 600px) {
+    padding: 10px 0 30px;
   }
   `
 
@@ -42,7 +41,7 @@ const formatPhoneNumber = (phoneNumberString) => {
 }
 
 const Header = props => (
-  <header>
+  <React.Fragment>
     <Title id="home">{props.profile.personal.name}</Title>
     <ContactInfo>
       <div>{formatPhoneNumber(props.profile.personal.phone)}</div>
@@ -51,7 +50,7 @@ const Header = props => (
       <Link link={props.profile.social.linkedin} />
       <Link link={props.profile.social.github} />
     </ContactInfo>
-  </header>
+  </React.Fragment>
 )
 
 export default Header;
