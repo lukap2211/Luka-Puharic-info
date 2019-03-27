@@ -4,33 +4,28 @@ import Skills from './Skills';
 import Experience from './Experience';
 import Education from './Education';
 
-const SectionItem = styled.section `
-  display: grid;
-  grid-template-columns: 190px auto;
-  margin: 0 0 50px;
-  @media (max-width: 700px) {
-    display: block;
-    overflow: hidden;
-    margin: 20px 0;
-  }
-  `
-
 const SectionTitle = styled.h2 `
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  text-transform: capitalize;
   margin: 0;
   padding: 0;
-  font-size: 1em;
   color: var(--faded);
-  min-width: 190px;
-  text-transform: capitalize;
-  @media (max-width: 700px) {
-    margin: 10px 0 30px;
+  font-size: 1em;
+
+  @media (max-width: 600px) {
+    margin: 30px 0 0;
+    padding: 10px 0 30px;
     font-size: 3em;
   }
   `
 
 const SectionInfo = styled.div `
   font-size: 1em;
+  line-height: 1.25;
   color: #000;
+  grid-column-start: 4;
+  grid-column-end: span 9;
   `
 
 class Section extends React.Component {
@@ -55,10 +50,10 @@ class Section extends React.Component {
     }
 
     return (
-      <SectionItem id={type}>
-        <SectionTitle>{type}</SectionTitle>
-        <SectionInfo>{sectionInfo(data)}</SectionInfo>
-      </SectionItem>
+      <React.Fragment>
+      <SectionTitle id={type}>{type}</SectionTitle>
+      <SectionInfo>{sectionInfo(data)}</SectionInfo>
+      </React.Fragment>
     )
   }
 }

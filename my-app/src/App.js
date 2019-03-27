@@ -20,7 +20,7 @@ class App extends Component {
         <Section type="experience" data={experience} />
         <Section type="education" data={education} />
         <Section type="skills" data={skills} />
-        <Footer name={profile.personal.name} />
+        <Footer profile={profile} />
       </Fragment>
     )
   }

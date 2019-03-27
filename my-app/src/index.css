@@ -12,8 +12,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (max-width: 700px) {
+#root {
+    margin: 20px auto;
+    max-width: 900px;
+    display: grid;
+    column-gap: 4.28571%;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 4.28571%;
+    grid-row-gap: 50px;
+}
+
+@media (max-width: 600px) {
   body {
     margin: 0 20px 40px;
+  }
+  #root {
+    margin: 0 auto;
+    display: block;
   }
 }

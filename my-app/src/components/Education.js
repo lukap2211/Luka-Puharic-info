@@ -8,13 +8,15 @@ const ExpWrap = styled.div `
 const ExpTop = styled.header `
   display: grid;
   grid-template-columns: auto auto;
+  text-transform: uppercase;
+  font-size:0.8em;
   color: var(--faded);
   div + div {
-    justify-self: right;
+    justify-self: end;
   }
   `
 
-const ExpTitle = styled.h4 `
+const ExpTitle = styled.h3 `
   font-weight: bold;
   margin: 5px 0;
   `

@@ -4,20 +4,19 @@ import styled from 'styled-components'
 const FooterWrap = styled.footer `
   color: var(--faded);
   margin: 50px auto;
-  text-align: right;
-
-  @media (max-width: 700px) {
-    margin: 250px auto 400px;
-    text-align: center;
-  }
-
+  grid-column-start: 1;
+  grid-column-end: span 12;
+  text-align: center;
   `
 
 class Footer extends React.Component {
   render() {
+
+    const { name } = this.props.profile.personal
+
     return (
       <FooterWrap>
-        { this.props.name } CV 2019 March
+        { name } CV 2019 March
       </FooterWrap>
     )
 
