@@ -43,13 +43,13 @@ const formatPhoneNumber = (phoneNumberString) => {
 
 const Header = props => (
   <React.Fragment>
-    <Title id="home">{props.profile.personal.name}</Title>
+    <Title id="home">{props.profile.name}</Title>
     <ContactInfo>
-      <div>{formatPhoneNumber(props.profile.personal.phone)}</div>
-      <Link link={props.profile.personal.email} />
+      <div>{formatPhoneNumber(props.profile.phone)}</div>
+      <Link link={props.profile.email} />
       <br/>
-      <Link link={props.profile.social.linkedin} />
-      <Link link={props.profile.social.github} />
+      <Link link={props.profile.linkedin} />
+      <Link link={props.profile.github} />
     </ContactInfo>
   </React.Fragment>
 )
