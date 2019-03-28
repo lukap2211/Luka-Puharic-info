@@ -126,23 +126,76 @@
     "dateTo": 2003
   }],
   "skills": [
-    "WebDevelopment",
-    "Mobile First",
-    "Agile Methodologies ",
-    "Responsive Web Design ",
-    "Process Automation ",
-    "Search Engine Optimisation",
-    "HTML5 ",
-    "CSS ",
-    "JavaScript ",
-    "Node.js ",
-    "Express.js ",
-    "jQuery",
-    "AWS ",
-    "Docker ",
-    "Jenkins ",
-    "Kuberneties ",
-    "MySQL ",
-    "SQL"
-  ]
+  {
+    "skill": "Web Development",
+    "rating": 10
+  },
+  {
+    "skill": "Mobile First",
+    "rating": 10
+  },
+  {
+    "skill": "Responsive Web Design ",
+    "rating": 10
+  },
+  {
+    "skill": "Agile Methodologies ",
+    "rating": 9
+  },
+  {
+    "skill": "Search Engine Optimisation",
+    "rating": 9
+  },
+  {
+    "skill": "Process Automation ",
+    "rating": 8
+  },
+  {
+    "skill": "HTML5 ",
+    "rating": 10
+  },
+  {
+    "skill": "CSS ",
+    "rating": 10
+  },
+  {
+    "skill": "JavaScript ",
+    "rating": 9
+  },
+  {
+    "skill": "jQuery",
+    "rating": 8
+  },
+  {
+    "skill": "Node.js ",
+    "rating": 8
+  },
+  {
+    "skill": "Express.js ",
+    "rating": 7
+  },
+  {
+    "skill": "AWS ",
+    "rating": 6
+  },
+  {
+    "skill": "Docker ",
+    "rating": 6
+  },
+  {
+    "skill": "Jenkins ",
+    "rating": 5
+  },
+  {
+    "skill": "Kuberneties ",
+    "rating": 5
+  },
+  {
+    "skill": "MySQL ",
+    "rating": 8
+  },
+  {
+    "skill": "SQL",
+    "rating": 9
+  }]
 }
