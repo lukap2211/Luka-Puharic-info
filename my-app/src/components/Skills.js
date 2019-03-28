@@ -15,6 +15,7 @@ const ListedItem = styled.li `
 
   span {
     float: right;
+    color: var(--faded);
     opacity: 0.8;
     font-weight: bold;
   }
