@@ -12,11 +12,11 @@ const FooterWrap = styled.footer `
 class Footer extends React.Component {
   render() {
 
-    const { name } = this.props.profile.personal
+    const { name } = this.props.profile || ''
 
     return (
       <FooterWrap>
-        { name } CV 2019 March
+        { name } Resume 2019 March
       </FooterWrap>
     )
 
