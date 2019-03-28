@@ -42,8 +42,9 @@
     page-break-inside: avoid;
   }
 
-  h2+div>li {
-    float: left !important;
-    padding: 0 10px 10px 0 !important;
+  h2#skills+div {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
   }
 }
