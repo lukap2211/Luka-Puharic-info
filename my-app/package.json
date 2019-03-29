@@ -5,12 +5,13 @@
   "homepage": ".",
   "dependencies": {
     "firebase": "^5.9.1",
-    "re-base": "^4.0.0",
     "intersection-observer": "^0.5.1",
+    "re-base": "^4.0.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-intersection-visible": "^2.1.0",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "react-spinners": "^0.5.3"
   },
   "scripts": {
     "start": "react-scripts start",
