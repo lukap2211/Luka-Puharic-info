@@ -23,7 +23,6 @@ const SectionTitle = styled.h2 `
 const SectionInfo = styled.div `
   font-size: 1em;
   line-height: 1.25;
-  color: #000;
   grid-column-start: 4;
   grid-column-end: span 9;
   overflow: hidden;
