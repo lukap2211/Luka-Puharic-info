@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import Loading from './components/Loading';
 import styled from 'styled-components'
 
-const Profile = styled.section`
+const Profile = styled.section `
   margin: 0 auto;
   padding: 0px 20px 40px;
   max-width: 900px;
@@ -24,7 +24,7 @@ const Profile = styled.section`
 
 class App extends Component {
 
-  constructor(){
+  constructor() {
     super()
     this.darkThemeOnOff = this.darkThemeOnOff.bind(this);
   }

@@ -3,10 +3,11 @@
   --primary-dark: #222;
   --primary-dark-faded: #999;
   --dark-color-font: #EFEFEF;
-  --dark-color-bg: rgba(34,34,34, 0.95);
+  --dark-color-bg: rgba(34, 34, 34, 0.95);
   --light-color-font: #111;
-  --light-color-bg: rgba(255,255,255,0.95);
+  --light-color-bg: rgba(255, 255, 255, 0.95);
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -18,8 +19,8 @@ body {
 }
 
 #root {
-    margin: 0;
-    min-height: 100vh;
+  margin: 0;
+  min-height: 100vh;
 }
 
 #root.darkTheme {

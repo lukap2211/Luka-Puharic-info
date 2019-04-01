@@ -26,7 +26,6 @@ const HamburgerIcon = styled.div `
   color: ${props => props.darkTheme ? 'var(--dark-color-font)' : 'var(--light-color-font)' };
   background-color: ${props => props.darkTheme ? 'var(--dark-color-bg)' : 'var(--light-color-bg)' };
 
-
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -87,12 +86,10 @@ const NavMenu = styled.nav `
     ul li.mobile {
       display: none;
     }
-
-
   }
   `
 
-const Avatar = styled.div`
+const Avatar = styled.div `
   height: 80px;
   width: 80px;
   background: transparent url("${props => props.profileImage}") center center;
