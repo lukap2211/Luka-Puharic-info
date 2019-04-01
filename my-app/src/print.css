@@ -2,10 +2,6 @@
   body {
     font-size: 8pt;
     line-height: 1 !important;
-  }
-
-  #root {
-    display: block;
     background: none !important;
     color: var(--darker) !important;
   }
