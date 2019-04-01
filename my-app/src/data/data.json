@@ -1,198 +1,149 @@
 {
-  "resume":
-  {
-    "profile":
-    {
-      "name": "Luka Puharic",
-      "phone": "9176750751",
-      "email": "lukap2211@gmail.com",
-      "linkedin": "https://www.linkedin.com/in/lukapuharic",
-      "linkedinImg": "https://avatars0.githubusercontent.com/u/391727?v=4",
-      "github": "https://github.com/lukap2211",
-      "gravatar": "https://s.gravatar.com/avatar/f09ca73d86b2b35e61b201cdebbec465?s=200",
-      "description": "Experienced Front End developer with more than 15 years of experience and expertise in HTML, CSS, JS, SEO.",
-      "summary": "Specialized in web responsive & mobile first approach, automated & enhanced workflows, best practices, and coding standards. I am quick to grasp new ideas and concepts and to develop innovative and creative solutions to problems"
+  "resume" : {
+    "education" : [ {
+      "dateTo" : 2013,
+      "institution" : "Griffith College Dublin",
+      "title" : "Master of Science (MSc), Applied Digital Media"
+    }, {
+      "dateTo" : 2003,
+      "institution" : "Faculty of Humanities and Social Sciences, University of Rijeka",
+      "title" : "Bachelor of Science (BSc), Information Technology & Pedagogy"
+    } ],
+    "experience" : [ {
+      "company" : "Verizon Media",
+      "dateFrom" : "June 2017",
+      "dateTo" : "February 2019",
+      "description" : [ "Platform consolidation and modules migration between yahoo.com and aol.com. CI/CD support for Yahoo.com Lifestyle, Entertainment, and Sports channels: detecting, identifying and resolving issues in the CI/CD process" ],
+      "location" : "New York, New York",
+      "technologies" : "Screwdriver, Jenkins, Node.js, AWS, Docker, Kuberneties, Marko, HTML5, JS, SCSS, Gulp, Yarn, proprietary test tools",
+      "title" : "Associate Manager / Senior Software Engineer | Aol.com"
+    }, {
+      "company" : "AOL",
+      "dateFrom" : "February 2016",
+      "dateTo" : "June 2017",
+      "description" : [ "Managed AOL Webmail team in Palo Alto and aol.com FE team in NYC responsible for content migration-related projects.", "Change Management lead: gatekeeper for aol.com deployment process, driving all aol.com deployments to production" ],
+      "location" : "New York, New York",
+      "title" : "Associate Technical Manager | Core Products"
+    }, {
+      "company" : "AOL",
+      "dateFrom" : "January 2015",
+      "dateTo" : "February 2016",
+      "description" : [ "CMS: worked closely with stakeholders, editors and product people to build a CMS to support aol.com based on users requirements", "Integration with third-party technologies like AWS services, automated deployment tasks using Gulp, SEO optimisation, Google AMP implementation, GitHub versioning system, Jenkins automated job" ],
+      "location" : "New York, New York",
+      "technologies" : "Ruby on Rails, HTML5, JS, SCSS, Gulp, Yarn, AWS, Jenkins, Google AMP",
+      "title" : "Senior Software Engineer | Core Products"
+    }, {
+      "company" : "AOL Ireland",
+      "dateFrom" : "August 2014",
+      "dateTo" : "January 2015",
+      "description" : [ "Content Migration: worked closely with product managers, design team and other dev team members to migrate various sites that eventually became main channels under aol.com: Kitchendaily.com > www.aol.com/food, Stlyelist.com > www.aol.com/style, Dailyfinance.com > www.aol.com/finance, Games.com > www.aol.com/games" ],
+      "location" : "Dublin, Ireland",
+      "technologies" : "HTML5, JS, SCSS, GruntJS, MySql",
+      "title" : "Senior Software Engineer | Brand Group"
+    }, {
+      "company" : "AOL Ireland",
+      "dateFrom" : "April 2011",
+      "dateTo" : "July 2014",
+      "description" : [ "Built and maintained many AOL content-driven sites (AOL Industry, AOL Entertainment, AOL Music) using proprietary AMP platform (AOL Media Platform)." ],
+      "location" : "Dublin, Ireland",
+      "technologies" : "PHP & twig, HTML5, JS, SCSS, GruntJS",
+      "title" : "Software Engineer | Media and Vertical Engineering"
+    }, null, {
+      "company" : "AOL Ireland",
+      "dateFrom" : "October 2009",
+      "dateTo" : "March 2010",
+      "description" : [ "Built and develop International AOL Money&Finance web sites based on specific requirements gathered on regular weekly meetings and demos. Worked as a part of the international and global team located all over the world (US, India, UK, Germany)." ],
+      "location" : "Dublin, Ireland",
+      "technologies" : "XHTML, CSS, PHP, XML, JavaScript, jQuery, AJAX, PhotoShop, Cross browser testing, SEO",
+      "title" : "Web Technologist"
+    }, {
+      "company" : "Version 1",
+      "dateFrom" : "May 2007",
+      "dateTo" : "February 2009",
+      "description" : [ "Part of the team working on development of proprietary PHP Core Framework Application. The content management system examination of the My Version 1 web portal. Internal timesheet system development." ],
+      "location" : "Dublin, Ireland",
+      "technologies" : "Zend Studio, PLSQL Developer, PHP 4, Oracle 10g, V1 Core Framework Application, CSS, LDAP, CVS, Bugzilla",
+      "title" : "IT Consultant / PHP Developer"
+    }, {
+      "company" : "RIS",
+      "dateFrom" : "November 2001",
+      "dateTo" : "November 2006",
+      "description" : [ "Management and development of the new web sites, with the specific requirements provided from clients. Coordinating closely with Account Executives, actively soliciting new clients and nurturing existing client accounts, ensuring their needs and requirements were not only accommodated but surpassed. Training clients in subsequent website maintenance. Initiating a company-wide changeover to a much faster ISP with enhanced technical support." ],
+      "location" : "Rijeka, Croatia",
+      "title" : "IT Consultant"
+    }, {
+      "company" : "Freelance",
+      "dateFrom" : "January 2000",
+      "dateTo" : "May 2006",
+      "description" : [ "Creation and maintenance of many Web sites and applications for corporate, non-profit and other clients. Performed the full spectrum of Web-related tasks, including rapid prototyping, design and layout, graphics creation and optimisation" ],
+      "location" : "Rijeka, Croatia",
+      "title" : "Web Design & Development"
+    } ],
+    "profile" : {
+      "description" : "Front End developer with more than 15 years of experience and expertise in HTML, CSS, JS, SEO.",
+      "email" : "lukap2211@gmail.com",
+      "github" : "https://github.com/lukap2211",
+      "gravatar" : "https://s.gravatar.com/avatar/f09ca73d86b2b35e61b201cdebbec465?s=200",
+      "linkedin" : "https://www.linkedin.com/in/lukapuharic",
+      "linkedinImg" : "https://avatars0.githubusercontent.com/u/391727?v=4",
+      "name" : "Luka Puharic",
+      "phone" : "9176750751",
+      "summary" : "Specialized in web responsive & mobile first approach, automated & enhanced workflows, best practices, and coding standards. I am quick to grasp new ideas and concepts and to develop innovative and creative solutions to problems"
     },
-    "experience": [
-    {
-      "dateFrom": "June 2017",
-      "dateTo": "February 2019",
-      "title": "Associate Manager / Senior Software Engineer | Aol.com",
-      "company": "Verizon Media",
-      "location": "New York, New York",
-      "description": [
-        "Platform consolidation and modules migration between yahoo.com and aol.com. CI/CD support for Yahoo.com Lifestyle, Entertainment, and Sports channels: detecting, identifying and resolving issues in the CI/CD process"
-      ],
-      "technologies": "Screwdriver, Jenkins, Node.js, AWS, Docker, Kuberneties, Marko, HTML5, JS, SCSS, Gulp, Yarn, proprietary test tools"
-    },
-    {
-      "dateFrom": "February 2016",
-      "dateTo": "June 2017",
-      "title": "Associate Technical Manager | Core Products",
-      "company": "AOL",
-      "location": "New York, New York",
-      "description": [
-        "Managed AOL Webmail team in Palo Alto and aol.com FE team in NYC responsible for content migration-related projects.",
-        "Change Management lead: gatekeeper for aol.com deployment process, driving all aol.com deployments to production"
-      ]
-    },
-    {
-      "dateFrom": "January 2015",
-      "dateTo": "February 2016",
-      "title": "Senior Software Engineer | Core Products",
-      "company": "AOL",
-      "location": "New York, New York",
-      "description": [
-        "CMS: worked closely with stakeholders, editors and product people to build a CMS to support aol.com based on users requirements",
-        "Integration with third-party technologies like AWS services, automated deployment tasks using Gulp, SEO optimisation, Google AMP implementation, GitHub versioning system, Jenkins automated job"
-      ],
-      "technologies": "Ruby on Rails, HTML5, JS, SCSS, Gulp, Yarn, AWS, Jenkins, Google AMP"
-    },
-    {
-      "dateFrom": "August 2014",
-      "dateTo": "January 2015",
-      "title": "Senior Software Engineer | Brand Group",
-      "company": "AOL Ireland",
-      "location": "Dublin, Ireland",
-      "description": [
-        "Content Migration: worked closely with product managers, design team and other dev team members to migrate various sites that eventually became main channels under aol.com: Kitchendaily.com > www.aol.com/food, Stlyelist.com > www.aol.com/style, Dailyfinance.com > www.aol.com/finance, Games.com > www.aol.com/games"
-      ],
-      "technologies": "HTML5, JS, SCSS, GruntJS, MySql"
-    },
-    {
-      "dateFrom": "April 2011",
-      "dateTo": "July 2014",
-      "title": "Software Engineer | Media and Vertical Engineering",
-      "company": "AOL Ireland",
-      "location": "Dublin, Ireland",
-      "description": [
-        "Built and maintained many AOL content-driven sites (AOL Industry, AOL Entertainment, AOL Music) using proprietary AMP platform (AOL Media Platform)."
-      ],
-      "technologies": "PHP & twig, HTML5, JS, SCSS, GruntJS"
-    },
-    {
-      "dateFrom": "June 2010 ",
-      "dateTo": "October 2010",
-      "title": "Software Engineer",
-      "company": "Makalu Technologies",
-      "location": "Dublin, Ireland"
-    },
-    {
-      "dateFrom": "October 2009",
-      "dateTo": "March 2010",
-      "title": "Web Technologist",
-      "company": "AOL Ireland",
-      "location": "Dublin, Ireland"
-    },
-    {
-      "dateFrom": "May 2007",
-      "dateTo": "February 2009",
-      "title": "IT Consultant / PHP Developer",
-      "company": "Version 1",
-      "location": "Dublin, Ireland"
-    },
-    {
-      "dateFrom": "November 2001",
-      "dateTo": "November 2006",
-      "title": "IT Consultant",
-      "company": "RIS",
-      "location": "Rijeka, Croatia"
-    },
-    {
-      "dateFrom": "January 2000",
-      "dateTo": "May 2006",
-      "title": "Web Design & Development",
-      "company": "Freelance",
-      "location": "Rijeka, Croatia",
-      "description": [
-        "Creation and maintenance of many Web sites and applications for corporate, non-profit and other clients. Performed the full spectrum of Web-related tasks, including rapid prototyping, design and layout, graphics creation and optimisation"
-      ]
-    }],
-    "education": [
-    {
-      "institution": "Griffith College Dublin",
-      "title": "Master of Science (MSc), Applied Digital Media",
-      "dateFrom": 2011,
-      "dateTo": 2013
-    },
-    {
-      "institution": "Faculty of Humanities and Social Sciences, University of Rijeka",
-      "title": "Bachelor of Science (BSc), Information Technology & Pedagogy",
-      "dateFrom": 1995,
-      "dateTo": 2003
-    }],
-    "skills": [
-    {
-      "skill": "Web Development",
-      "rating": 10
-    },
-    {
-      "skill": "Mobile First",
-      "rating": 10
-    },
-    {
-      "skill": "Responsive Web Design ",
-      "rating": 10
-    },
-    {
-      "skill": "Agile Methodologies ",
-      "rating": 9
-    },
-    {
-      "skill": "Search Engine Optimisation",
-      "rating": 9
-    },
-    {
-      "skill": "Process Automation ",
-      "rating": 8
-    },
-    {
-      "skill": "HTML5 ",
-      "rating": 10
-    },
-    {
-      "skill": "CSS ",
-      "rating": 10
-    },
-    {
-      "skill": "JavaScript ",
-      "rating": 9
-    },
-    {
-      "skill": "jQuery",
-      "rating": 8
-    },
-    {
-      "skill": "Node.js ",
-      "rating": 8
-    },
-    {
-      "skill": "Express.js ",
-      "rating": 7
-    },
-    {
-      "skill": "AWS ",
-      "rating": 6
-    },
-    {
-      "skill": "Docker ",
-      "rating": 6
-    },
-    {
-      "skill": "Jenkins ",
-      "rating": 5
-    },
-    {
-      "skill": "Kuberneties ",
-      "rating": 5
-    },
-    {
-      "skill": "MySQL ",
-      "rating": 8
-    },
-    {
-      "skill": "SQL",
-      "rating": 9
-    }]
+    "skills" : [ {
+      "rating" : 10,
+      "skill" : "Web Development"
+    }, {
+      "rating" : 10,
+      "skill" : "Mobile First"
+    }, {
+      "rating" : 10,
+      "skill" : "Responsive Web Design "
+    }, {
+      "rating" : 9,
+      "skill" : "Agile Methodologies "
+    }, {
+      "rating" : 9,
+      "skill" : "Search Engine Optimisation"
+    }, {
+      "rating" : 8,
+      "skill" : "Process Automation "
+    }, {
+      "rating" : 10,
+      "skill" : "HTML5 "
+    }, {
+      "rating" : 10,
+      "skill" : "CSS "
+    }, {
+      "rating" : 9,
+      "skill" : "JavaScript "
+    }, {
+      "rating" : 8,
+      "skill" : "jQuery"
+    }, {
+      "rating" : 8,
+      "skill" : "Node.js "
+    }, {
+      "rating" : 7,
+      "skill" : "Express.js "
+    }, {
+      "rating" : 6,
+      "skill" : "AWS "
+    }, {
+      "rating" : 6,
+      "skill" : "Docker "
+    }, {
+      "rating" : 5,
+      "skill" : "Jenkins "
+    }, {
+      "rating" : 5,
+      "skill" : "Kuberneties "
+    }, {
+      "rating" : 8,
+      "skill" : "MySQL "
+    }, {
+      "rating" : 9,
+      "skill" : "SQL"
+    } ]
   }
 }
