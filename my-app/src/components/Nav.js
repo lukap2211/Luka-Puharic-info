@@ -12,8 +12,8 @@ const ThemeSwitcher = styled.div `
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  color: ${props => props.darkTheme ? 'var(--dark-color-font)' : 'var(--light-color-font)' };
-  background-color: ${props => props.darkTheme ? 'var(--dark-color-bg)' : 'var(--light-color-bg)' };
+  color: ${props => props.darkTheme ? 'var(--light-color-font)' : 'var(--dark-color-font)' };
+  background-color: ${props => props.darkTheme ? 'var(--light-color-bg)' : 'var(--dark-color-bg)' };
   `
 
 const HamburgerIcon = styled.div `
@@ -30,7 +30,7 @@ const HamburgerIcon = styled.div `
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: var(--faded);
+    background-color: var(--primary-dark-faded);
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -60,7 +60,7 @@ const NavMenu = styled.nav `
   }
 
   ul {
-    background-color: var(--title-main);
+    background-color: var(--primary-color);
     margin: 0;
     padding: 0;
     width: 135px;
@@ -84,7 +84,11 @@ const NavMenu = styled.nav `
   }
 
   @media (min-width: 600px) {
-    display: none;
+    ul li.mobile {
+      display: none;
+    }
+
+
   }
   `
 
@@ -121,13 +125,13 @@ class Nav extends React.Component {
         </HamburgerIcon>
         <ul>
           <li><a onClick={this.menuToggle} href="#home"><Avatar profileImage={profileImage}/></a></li>
-          <li><a onClick={this.menuToggle} href="#profile">Profile</a></li>
-          <li><a onClick={this.menuToggle} href="#summary">Summary</a></li>
-          <li><a onClick={this.menuToggle} href="#experience">Experience</a></li>
-          <li><a onClick={this.menuToggle} href="#education">Education</a></li>
-          <li><a onClick={this.menuToggle} href="#skills">Skills</a></li>
+          <li className="mobile"><a onClick={this.menuToggle} href="#profile">Profile</a></li>
+          <li className="mobile"><a onClick={this.menuToggle} href="#summary">Summary</a></li>
+          <li className="mobile"><a onClick={this.menuToggle} href="#experience">Experience</a></li>
+          <li className="mobile"><a onClick={this.menuToggle} href="#education">Education</a></li>
+          <li className="mobile"><a onClick={this.menuToggle} href="#skills">Skills</a></li>
         </ul>
-        <ThemeSwitcher onClick={this.props.darkThemeOnOff} darkTheme={this.props.darkTheme}>Theme on/off</ThemeSwitcher>
+        <ThemeSwitcher onClick={this.props.darkThemeOnOff} darkTheme={this.props.darkTheme}>{ this.props.darkTheme ? 'Light theme' : 'Dark theme'}</ThemeSwitcher>
       </NavMenu>
     )
   }

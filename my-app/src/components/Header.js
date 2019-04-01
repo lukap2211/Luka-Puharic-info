@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Link from './Link';
 
 const ContactInfo = styled.div `
-  color: var(--faded);
+  color: var(--primary-dark-faded);
   grid-column-start: 6;
   grid-column-end: span 7;
   place-self: end;
@@ -20,10 +20,10 @@ const Title = styled.h1 `
   grid-column-end: span 3;
   place-self: center start;
   font-size: 3.5em;
-  color: var(--title-main);
+  color: var(--primary-color);
   line-height: 1;
   margin: 0;
-  padding: 0;
+  padding: 20px 0 0;
   width: 0;
   break-word: normal;
 

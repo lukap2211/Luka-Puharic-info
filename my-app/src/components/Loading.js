@@ -5,13 +5,14 @@ import styled from 'styled-components'
 import DotLoader from 'react-spinners/DotLoader';
 
 const LoadingWrap = styled.h1 `
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 50px 0;
   display: flex;
   justify-content: center;
   grid-column-start: 1;
   grid-column-end: span 12;
   div > div {
-    background-color: var(--title-main);
+    background-color: var(--primary-color);
   }
   `
 

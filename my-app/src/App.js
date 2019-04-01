@@ -9,7 +9,7 @@ import styled from 'styled-components'
 
 const Profile = styled.section`
   margin: 0 auto;
-  padding: 20px 20px 40px;
+  padding: 0px 20px 40px;
   max-width: 900px;
   display: grid;
   column-gap: 4.28571%;
@@ -17,13 +17,7 @@ const Profile = styled.section`
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 4.28571%;
   grid-row-gap: 50px;
-  color: black;
-  &.on {
-    background: #222;
-    color: white;
-  }
   @media (max-width: 600px) {
-    margin: 0 auto;
     display: block;
   }
   `
@@ -49,6 +43,15 @@ class App extends Component {
         this.setState({ loaded: true });
       }
     })
+
+    const localDarkTheme = localStorage.getItem('darkTheme');
+    this.setState({ darkTheme: localDarkTheme === 'on' ? true : false });
+  }
+
+  componentDidUpdate() {
+    const rootElement = document.getElementById("root")
+    this.state.darkTheme ? rootElement.classList.add('darkTheme') : rootElement.classList.remove('darkTheme')
+    localStorage.setItem('darkTheme', this.state.darkTheme ? 'on' : 'off');
   }
 
   componentWillUnmount() {
@@ -84,7 +87,7 @@ class App extends Component {
     }
 
     return (
-      <Profile className={this.state.darkTheme ? 'on': 'off' }>
+      <Profile>
         {page}
       </Profile>
     )

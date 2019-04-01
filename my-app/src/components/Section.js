@@ -10,8 +10,8 @@ const SectionTitle = styled.h2 `
   text-transform: capitalize;
   margin: 0;
   padding: 0;
-  color: var(--title-main);
-  font-size: 1em;
+  color: var(--primary-color);
+  font-size: 1.5em;
 
   @media (max-width: 600px) {
     margin: 20px 0 0;
