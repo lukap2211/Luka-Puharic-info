@@ -1,6 +1,21 @@
 import React from "react";
 import styled from 'styled-components'
 
+const ThemeSwitcher = styled.div `
+  background-color: #111;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  color: ${props => props.darkTheme ? 'var(--light-color-font)' : 'var(--dark-color-font)' };
+  background-color: ${props => props.darkTheme ? 'var(--light-color-bg)' : 'var(--dark-color-bg)' };
+  `
+
 const HamburgerIcon = styled.div `
   display: inline-block;
   cursor: pointer;
@@ -8,12 +23,13 @@ const HamburgerIcon = styled.div `
   left: -75px;
   top: 0;
   padding: 20px;
-  background-color: rgba(255,255,255,0.85);
+  color: ${props => props.darkTheme ? 'var(--dark-color-font)' : 'var(--light-color-font)' };
+  background-color: ${props => props.darkTheme ? 'var(--dark-color-bg)' : 'var(--light-color-bg)' };
 
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: var(--faded);
+    background-color: var(--primary-dark-faded);
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -23,8 +39,6 @@ const NavMenu = styled.nav `
   position: fixed;
   right: -135px;
   top: 0;
-  padding: 10px 0;
-  background-color: var(--title-main);
   z-index: 2;
   transition: all .5s;
 
@@ -45,6 +59,7 @@ const NavMenu = styled.nav `
   }
 
   ul {
+    background-color: var(--primary-color);
     margin: 0;
     padding: 0;
     width: 135px;
@@ -68,11 +83,13 @@ const NavMenu = styled.nav `
   }
 
   @media (min-width: 600px) {
-    display: none;
+    ul li.mobile {
+      display: none;
+    }
   }
   `
 
-const Avatar = styled.div`
+const Avatar = styled.div `
   height: 80px;
   width: 80px;
   background: transparent url("${props => props.profileImage}") center center;
@@ -98,19 +115,20 @@ class Nav extends React.Component {
     return (
 
       <NavMenu className={this.state.menuOn} >
-        <HamburgerIcon onClick={this.menuToggle} >
+        <HamburgerIcon onClick={this.menuToggle} darkTheme={this.props.darkTheme}>
           <div className="bar1"></div>
           <div className="bar2"></div>
           <div className="bar3"></div>
         </HamburgerIcon>
         <ul>
           <li><a onClick={this.menuToggle} href="#home"><Avatar profileImage={profileImage}/></a></li>
-          <li><a onClick={this.menuToggle} href="#profile">Profile</a></li>
-          <li><a onClick={this.menuToggle} href="#summary">Summary</a></li>
-          <li><a onClick={this.menuToggle} href="#experience">Experience</a></li>
-          <li><a onClick={this.menuToggle} href="#education">Education</a></li>
-          <li><a onClick={this.menuToggle} href="#skills">Skills</a></li>
+          <li className="mobile"><a onClick={this.menuToggle} href="#profile">Profile</a></li>
+          <li className="mobile"><a onClick={this.menuToggle} href="#summary">Summary</a></li>
+          <li className="mobile"><a onClick={this.menuToggle} href="#experience">Experience</a></li>
+          <li className="mobile"><a onClick={this.menuToggle} href="#education">Education</a></li>
+          <li className="mobile"><a onClick={this.menuToggle} href="#skills">Skills</a></li>
         </ul>
+        <ThemeSwitcher onClick={this.props.darkThemeOnOff} darkTheme={this.props.darkTheme}>{ this.props.darkTheme ? 'Light theme' : 'Dark theme'}</ThemeSwitcher>
       </NavMenu>
     )
   }

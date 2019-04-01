@@ -5,11 +5,11 @@ const Link = styled.a`
   list-style: none;
   padding: 0 0 5px 0;
   font-size: 1em;
-  color: var(--faded);
+  color: var(--primary-dark-faded);
   text-decoration: none;
   display: block;
   &:hover {
-    color: var(--title-main);
+    color: var(--primary-color);
   }
   @media (max-width: 600px) {
     display: table;

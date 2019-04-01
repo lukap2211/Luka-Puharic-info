@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components'
 
 const FooterWrap = styled.footer `
-  color: var(--faded);
+  color: var(--primary-dark-faded);
   margin: 50px auto;
   grid-column-start: 1;
   grid-column-end: span 12;

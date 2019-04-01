@@ -10,8 +10,8 @@ const SectionTitle = styled.h2 `
   text-transform: capitalize;
   margin: 0;
   padding: 0;
-  color: var(--title-main);
-  font-size: 1em;
+  color: var(--primary-color);
+  font-size: 1.5em;
 
   @media (max-width: 600px) {
     margin: 20px 0 0;
@@ -23,7 +23,6 @@ const SectionTitle = styled.h2 `
 const SectionInfo = styled.div `
   font-size: 1em;
   line-height: 1.25;
-  color: #000;
   grid-column-start: 4;
   grid-column-end: span 9;
   overflow: hidden;

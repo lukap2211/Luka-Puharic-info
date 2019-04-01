@@ -1,9 +1,15 @@
 :root {
-  --title-main: #D11878;
-  --faded: #999;
+  --primary-color: #D11878;
+  --primary-dark: #222;
+  --primary-dark-faded: #999;
+  --dark-color-font: #EFEFEF;
+  --dark-color-bg: rgba(34, 34, 34, 0.95);
+  --light-color-font: #111;
+  --light-color-bg: rgba(255, 255, 255, 0.95);
 }
+
 body {
-  margin: 20px 40px 40px;
+  margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -13,22 +19,11 @@ body {
 }
 
 #root {
-    margin: 20px auto;
-    max-width: 900px;
-    display: grid;
-    column-gap: 4.28571%;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 4.28571%;
-    grid-row-gap: 50px;
+  margin: 0;
+  min-height: 100vh;
 }
 
-@media (max-width: 600px) {
-  body {
-    margin: 0 20px 40px;
-  }
-  #root {
-    margin: 0 auto;
-    display: block;
-  }
+#root.darkTheme {
+  background: var(--primary-dark);
+  color: var(--dark-color-font);
 }
