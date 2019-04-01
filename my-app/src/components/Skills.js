@@ -17,7 +17,7 @@ const ListedItem = styled.li `
 
   span {
     float: right;
-    color: var(--primary-dark-faded);
+    color: var(--light);
     opacity: 0.8;
     font-weight: bold;
   }
@@ -29,7 +29,7 @@ const SkillScale = styled.div `
   bottom: 0;
   left: 0;
   width: 0%;
-  background-color: var(--primary-dark-faded);
+  background-color: var(--light);
   transition: all 1s;
   opacity: 0.2;
 `

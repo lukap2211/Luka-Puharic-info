@@ -5,7 +5,7 @@ const Link = styled.a`
   list-style: none;
   padding: 0 0 5px 0;
   font-size: 1em;
-  color: var(--primary-dark-faded);
+  color: var(--light);
   text-decoration: none;
   display: block;
   &:hover {

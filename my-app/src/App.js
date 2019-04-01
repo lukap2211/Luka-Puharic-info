@@ -49,7 +49,7 @@ class App extends Component {
   }
 
   componentDidUpdate() {
-    const rootElement = document.getElementById("root")
+    const rootElement = document.body
     this.state.darkTheme ? rootElement.classList.add('darkTheme') : rootElement.classList.remove('darkTheme')
     localStorage.setItem('darkTheme', this.state.darkTheme ? 'on' : 'off');
   }

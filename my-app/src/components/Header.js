@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Link from './Link';
 
 const ContactInfo = styled.div `
-  color: var(--primary-dark-faded);
+  color: var(--light);
   grid-column-start: 6;
   grid-column-end: span 7;
   place-self: end;

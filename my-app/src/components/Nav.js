@@ -12,8 +12,8 @@ const ThemeSwitcher = styled.div `
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  color: ${props => props.darkTheme ? 'var(--light-color-font)' : 'var(--dark-color-font)' };
-  background-color: ${props => props.darkTheme ? 'var(--light-color-bg)' : 'var(--dark-color-bg)' };
+  color: ${props => props.darkTheme ? 'var(--darker)' : 'var(--lighter)' };
+  background-color: ${props => props.darkTheme ? 'var(--light-bg)' : 'var(--dark-bg)' };
   `
 
 const HamburgerIcon = styled.div `
@@ -23,13 +23,13 @@ const HamburgerIcon = styled.div `
   left: -75px;
   top: 0;
   padding: 20px;
-  color: ${props => props.darkTheme ? 'var(--dark-color-font)' : 'var(--light-color-font)' };
-  background-color: ${props => props.darkTheme ? 'var(--dark-color-bg)' : 'var(--light-color-bg)' };
+  color: ${props => props.darkTheme ? 'var(--lighter)' : 'var(--darker)' };
+  background-color: ${props => props.darkTheme ? 'var(--dark-bg)' : 'var(--light-bg)' };
 
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: var(--primary-dark-faded);
+    background-color: var(--light);
     margin: 6px 0;
     transition: 0.4s;
   }

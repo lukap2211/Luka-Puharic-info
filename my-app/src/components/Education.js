@@ -7,10 +7,10 @@ const ExpWrap = styled.div `
 
 const ExpTop = styled.header `
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 70% auto;
   text-transform: uppercase;
   font-size:0.8em;
-  color: var(--primary-dark-faded);
+  color: var(--light);
   div + div {
     justify-self: end;
   }
@@ -24,13 +24,13 @@ const ExpTitle = styled.h3 `
 class Education extends React.Component {
   render() {
 
-    const { dateFrom, dateTo, title, institution } = this.props.data
+    const { dateTo, title, institution } = this.props.data
 
     return (
       <ExpWrap>
         <ExpTop>
           <div>{institution}</div>
-          <div>{dateFrom} - {dateTo}</div>
+          <div>{dateTo}</div>
         </ExpTop>
         <div>
           <ExpTitle>{title}</ExpTitle>

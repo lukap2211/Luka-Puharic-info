@@ -1,11 +1,11 @@
 :root {
   --primary-color: #D11878;
-  --primary-dark: #222;
-  --primary-dark-faded: #999;
-  --dark-color-font: #EFEFEF;
-  --dark-color-bg: rgba(34, 34, 34, 0.95);
-  --light-color-font: #111;
-  --light-color-bg: rgba(255, 255, 255, 0.95);
+  --lighter: #EFEFEF;
+  --light: #999;
+  --dark: #222;
+  --darker: #111;
+  --dark-bg: rgba(34, 34, 34, 0.95);
+  --light-bg: rgba(255, 255, 255, 0.95);
 }
 
 body {
@@ -18,12 +18,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root {
-  margin: 0;
-  min-height: 100vh;
-}
-
-#root.darkTheme {
-  background: var(--primary-dark);
-  color: var(--dark-color-font);
+body.darkTheme {
+  background: var(--dark);
+  color: var(--lighter);
 }

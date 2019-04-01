@@ -10,7 +10,7 @@ const ExpTop = styled.header `
   grid-template-columns: auto auto;
   text-transform: uppercase;
   font-size:0.8em;
-  color: var(--primary-dark-faded);
+  color: var(--light);
   div + div {
     justify-self: end;
   }
@@ -25,7 +25,7 @@ const ExpCompany = styled.h3 `
   `
 
 const ExpLocation = styled.div `
-  color: var(--primary-dark-faded);
+  color: var(--light);
   @media (max-width: 600px) {
     font-size: 1em;
   }
