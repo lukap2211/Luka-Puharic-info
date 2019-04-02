@@ -108,6 +108,11 @@ class Nav extends React.Component {
     this.setState({ menuOn: toggleState });
   };
 
+  menuToggleWithTheme = () => {
+    this.menuToggle();
+    this.props.darkThemeOnOff()
+  }
+
   render() {
 
     const { profileImage } = this.props
@@ -128,7 +133,7 @@ class Nav extends React.Component {
           <li className="mobile"><a onClick={this.menuToggle} href="#education">Education</a></li>
           <li className="mobile"><a onClick={this.menuToggle} href="#skills">Skills</a></li>
         </ul>
-        <ThemeSwitcher onClick={this.props.darkThemeOnOff} darkTheme={this.props.darkTheme}>{ this.props.darkTheme ? 'Light theme' : 'Dark theme'}</ThemeSwitcher>
+        <ThemeSwitcher onClick={this.menuToggleWithTheme} darkTheme={this.props.darkTheme}>{ this.props.darkTheme ? 'Light theme' : 'Dark theme'}</ThemeSwitcher>
       </NavMenu>
     )
   }
