@@ -74,7 +74,7 @@ class App extends Component {
     } else {
       const {
         profile,
-        profile: { description, summary, linkedinImg: profileImage },
+        profile: { description, summary, interests, linkedinImg: profileImage },
         experience,
         education,
         skills,
@@ -92,6 +92,7 @@ class App extends Component {
           <Section type="experience" data={experience} />
           <Section type="education" data={education} />
           <Section type="skills" data={skills} />
+          <Section type="interests" data={interests} />
           <Footer profile={profile} />
         </Fragment>
       );

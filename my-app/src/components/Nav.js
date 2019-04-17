@@ -164,6 +164,11 @@ class Nav extends React.Component {
               Skills
             </a>
           </li>
+          <li className="mobile">
+            <a onClick={this.menuToggle} href="#interests">
+              Interests
+            </a>
+          </li>
         </ul>
         <ThemeSwitcher
           onClick={this.menuToggleWithTheme}
