@@ -100,6 +100,7 @@ const Avatar = styled.div`
   background: transparent url("${props => props.profileImage}") center center;
   background-size: cover;
   border-radius: 40px;
+  margin: 15px 20px;
   `;
 
 class Nav extends React.Component {
@@ -135,9 +136,7 @@ class Nav extends React.Component {
         </HamburgerIcon>
         <ul>
           <li>
-            <a onClick={this.menuToggle} href="#home">
               <Avatar profileImage={profileImage} />
-            </a>
           </li>
           <li className="mobile">
             <a onClick={this.menuToggle} href="#profile">

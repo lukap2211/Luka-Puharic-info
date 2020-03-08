@@ -4,7 +4,7 @@ import IntersectionVisible from 'react-intersection-visible'
 // eslint-disable-next-line
 import IntersectionObserver from 'intersection-observer'
 
-const ListedItem = styled.li `
+const ListedItem = styled.div `
   list-style: none;
   position: relative;
   padding: 2px 5px;
@@ -17,7 +17,7 @@ const ListedItem = styled.li `
 
   span {
     float: right;
-    color: var(--light);
+    color: var(--dark);
     opacity: 0.8;
     font-weight: bold;
   }

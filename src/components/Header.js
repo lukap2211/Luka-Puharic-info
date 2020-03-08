@@ -11,6 +11,8 @@ const ContactInfo = styled.div `
     margin-bottom: 5px;
   }
   @media (max-width: 600px) {
+    grid-gap: 8px;
+    display: grid;
     margin: 0 0 20px;
   }
   `

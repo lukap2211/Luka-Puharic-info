@@ -12,7 +12,7 @@ const Link = styled.a`
     color: var(--primary-color);
   }
   @media (max-width: 600px) {
-    display: table;
+    display: block;
   }
 
   `
@@ -24,7 +24,7 @@ class HeaderLink extends React.Component {
 
     const renderLink = (link) => {
       if (link.startsWith('http')) {
-        return <Link href={link} target="_blank">{link}</Link>
+        return <Link href={link} target="_blank" rel="noopener">{link}</Link>
       } else {
         return <Link href={`mailto: ${link}`}>{link}</Link>
       }
