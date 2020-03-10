@@ -4,7 +4,6 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
-    "firebase": "^5.9.1",
     "intersection-observer": "^0.5.1",
     "re-base": "^4.0.0",
     "react": "^16.8.5",

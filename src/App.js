@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-// import base from './data/firebase';
 import Nav from './components/Nav';
 import Header from './components/Header';
 import Section from './components/Section';
@@ -38,14 +37,6 @@ class App extends Component {
 
   componentDidMount() {
     this.setState({ resume: data.resume, loaded: true });
-    // this.ref = base.syncState('resume', {
-    //   context: this,
-    //   state: 'resume',
-    //   then() {
-    //     this.setState({ loaded: true });
-    //   },
-    // });
-
     const localDarkTheme = localStorage.getItem('darkTheme');
     this.setState({ darkTheme: localDarkTheme === 'on' ? true : false });
   }
@@ -56,10 +47,6 @@ class App extends Component {
       ? rootElement.classList.add('darkTheme')
       : rootElement.classList.remove('darkTheme');
     localStorage.setItem('darkTheme', this.state.darkTheme ? 'on' : 'off');
-  }
-
-  componentWillUnmount() {
-    // base.removeBinding(this.ref);
   }
 
   darkThemeOnOff() {
