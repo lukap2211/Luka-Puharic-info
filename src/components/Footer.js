@@ -13,7 +13,7 @@ class Footer extends React.Component {
   render() {
     const { name } = this.props.profile || '';
 
-    return <FooterWrap>{name} Resume 2019 April</FooterWrap>;
+    return <FooterWrap>{name} Resume July 2024</FooterWrap>;
   }
 }
 export default Footer;
