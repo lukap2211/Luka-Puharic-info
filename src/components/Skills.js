@@ -1,6 +1,5 @@
 import React from "react";
 import styled from 'styled-components'
-import IntersectionVisible from 'react-intersection-visible'
 // eslint-disable-next-line
 import IntersectionObserver from 'intersection-observer'
 
@@ -53,12 +52,11 @@ class Skills extends React.Component {
     const { skill, rating } = this.props.data
 
     return (
-      <IntersectionVisible onHide={e => this.hideSkill(e)} onShow={e => this.showSkill(e)} >
         <ListedItem className={this.state.skillsOn} rating={rating}>
-          { skill } <span>{rating}</span>
+          { skill }
+          {/* <span>{rating}</span> */}
           <SkillScale/>
         </ListedItem>
-      </IntersectionVisible>
     )
   }
 }

@@ -16,7 +16,7 @@ const Profile = styled.section`
   grid-auto-flow: row;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 4.28571%;
-  grid-row-gap: 50px;
+  grid-row-gap: 40px;
   @media (max-width: 600px) {
     display: block;
   }
@@ -70,18 +70,18 @@ class App extends Component {
       } = this.state.resume;
       page = (
         <Fragment>
-          <Nav
+          {/* <Nav
             profileImage={profileImage}
             darkThemeOnOff={this.darkThemeOnOff}
             darkTheme={this.state.darkTheme}
-          />
+          /> */}
           <Header profile={profile} />
           <Section type="profile" data={description} />
           <Section type="summary" data={summary} />
           <Section type="experience" data={experience} />
           <Section type="education" data={education} />
           <Section type="skills" data={skills} />
-          <Section type="interests" data={interests} />
+          {/* <Section type="interests" data={interests} /> */}
           <Footer profile={profile} />
         </Fragment>
       );

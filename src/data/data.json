@@ -3,27 +3,78 @@
     "education": [
       {
         "dateTo": 2013,
-        "institution": "Griffith College Dublin",
+        "institution": "Griffith College Dublin, Ireland",
         "title": "Master of Science (MSc), Applied Digital Media"
       },
       {
         "dateTo": 2003,
-        "institution": "Faculty of Humanities and Social Sciences, University of Rijeka",
+        "institution": "Faculty of Humanities and Social Sciences, University of Rijeka, Croatia",
         "title": "Bachelor of Science (BSc), Information Technology & Pedagogy"
       }
     ],
     "experience": [
       {
-        "company": "CNBC",
-        "dateFrom": "July 2019",
-        "dateTo": "Dec 2019",
+        "company": "Bloomberg LP",
+
+        "dateFrom": "January 2022",
+        "dateTo": "present",
         "description": [
-          "Front end developer - Select brand under CNBC (July - Sept)",
-          "Part of the Video Monetization team working on CNBC video related frontend tasks (Oct - Dec)."
+          "Developed Cloud Visibility Platform, a new internal web application that aggregates data from 3 CSPs into one centralized application for Bloomberg engineers’ usage"
         ],
         "location": "New York, New York",
         "technologies": "ReactJS, GraphQL, SCSS, SEO",
-        "title": "Software Developer"
+        "title": "Senior Software Engineering Consultant (contract)"
+      },
+      {
+        "company": "Univision",
+        "dateFrom": "September 2021",
+        "dateTo": "December 2021",
+        "description": [
+          "Developed React components with TypeScript, NextJS, Styled components",
+          "Collaborated across teams to develop a UI component design system",
+          "Increased test coverage using jest, and react-testing-library"
+        ],
+        "location": "New York, New York",
+        "technologies": "ReactJS, GraphQL, SCSS, SEO",
+        "title": "Senior Software Engineering Consultant (contract)"
+      },
+      {
+        "company": "Bloomberg LP",
+        "dateFrom": "July 2020",
+        "dateTo": "July 2021",
+        "description": [
+          "Contributed to development of a new internal web application used across Bloomberg global offices",
+          "Designed CSS strategies for managing extra-wide breakpoints (> 2400px)",
+          "Developed GraphQL endpoints and queries to power a React/NextJS front-end"
+        ],
+        "location": "New York, New York",
+        "technologies": "ReactJS, GraphQL, SCSS, SEO",
+        "title": "Senior Software Engineering Consultant (contract)"
+      },
+      {
+        "company": "Hawkfish",
+        "dateFrom": "February 2020",
+        "dateTo": "July 2020",
+        "description": [
+          "Contributed to the development of Mike Bloomberg’s presidential campaign website using GatsbyJS",
+          "Led front-end CSS development leveraging Tailwind CSS for Hawkfish.com and its web properties",
+          "Created content models using Contentful CMS and developed integration with their API"
+        ],
+        "location": "New York, New York",
+        "technologies": "ReactJS, GraphQL, SCSS, SEO",
+        "title": "Senior Software Engineering Consultant (contract)"
+      },
+      {
+        "company": "CNBC",
+        "dateFrom": "July 2019",
+        "dateTo": "December 2019",
+        "description": [
+          "Assisted in product development and launch of new CNBC website (CNBC Select)",
+          "Led refactoring of business-critical front-end components"
+        ],
+        "location": "New York, New York",
+        "technologies": "ReactJS, GraphQL, SCSS, SEO",
+        "title": "Senior Software Engineering Consultant (contract)"
       },
       {
         "company": "Econify LLC",
@@ -31,75 +82,33 @@
         "dateTo": "present",
         "description": [""],
         "location": "New York, New York",
-        "technologies": "ReactJS, GraphQL, SCSS",
-        "title": "Software Developer"
+        "technologies": "ReactJS, GraphQL, CSS frameworks",
+        "title": "Senior Software Engineering Consultant"
       },
       {
         "company": "Verizon Media",
         "dateFrom": "June 2017",
         "dateTo": "February 2019",
         "description": [
-          "Platform consolidation and modules migration between yahoo.com and aol.com. CI/CD support for Yahoo.com Lifestyle, Entertainment, and Sports channels: detecting, identifying and resolving issues in the CI/CD process"
+          "Managed the AOL Webmail team in Palo Alto and the aol.com FE team in NYC",
+          "Performed platform consolidation and module migration between yahoo.com and aol.com",
+          "Supported CI/CD pipelines for Yahoo.com Lifestyle, Entertainment, and Sports channels"
         ],
         "location": "New York, New York",
         "technologies": "Screwdriver, Jenkins, Node.js, AWS, Docker, Kuberneties, Marko, HTML5, JS, SCSS, Gulp, Yarn, proprietary test tools",
-        "title": "Associate Manager / Senior Software Engineer | Aol.com"
+        "title": "Associate Technical Manager"
       },
       {
         "company": "AOL",
-        "dateFrom": "February 2016",
-        "dateTo": "June 2017",
+        "dateFrom": "April 2009",
+        "dateTo": " June 2017",
         "description": [
-          "Managed AOL Webmail team in Palo Alto and aol.com FE team in NYC responsible for content migration-related projects.",
-          "Change Management lead: gatekeeper for aol.com deployment process, driving all aol.com deployments to production"
+          "Managed content migration-related projects and front-end development on verticals within aol.com",
+          "Worked closely with stakeholders, editors, and product to build a CMS that supports aol.com"
         ],
-        "location": "New York, New York",
-        "title": "Associate Technical Manager | Core Products"
-      },
-      {
-        "company": "AOL",
-        "dateFrom": "January 2015",
-        "dateTo": "February 2016",
-        "description": [
-          "CMS: worked closely with stakeholders, editors and product people to build a CMS to support aol.com based on users requirements",
-          "Integration with third-party technologies like AWS services, automated deployment tasks using Gulp, SEO optimisation, Google AMP implementation, GitHub versioning system, Jenkins automated job"
-        ],
-        "location": "New York, New York",
+        "location": "Dublin, Ireland, (New York January 2015)",
         "technologies": "Ruby on Rails, HTML5, JS, SCSS, Gulp, Yarn, AWS, Jenkins, Google AMP",
-        "title": "Senior Software Engineer | Core Products"
-      },
-      {
-        "company": "AOL Ireland",
-        "dateFrom": "August 2014",
-        "dateTo": "January 2015",
-        "description": [
-          "Content Migration: worked closely with product managers, design team and other dev team members to migrate various sites that eventually became main channels under aol.com: Kitchendaily.com > www.aol.com/food, Stlyelist.com > www.aol.com/style, Dailyfinance.com > www.aol.com/finance, Games.com > www.aol.com/games"
-        ],
-        "location": "Dublin, Ireland",
-        "technologies": "HTML5, JS, SCSS, GruntJS, MySql",
-        "title": "Senior Software Engineer | Brand Group"
-      },
-      {
-        "company": "AOL Ireland",
-        "dateFrom": "April 2011",
-        "dateTo": "July 2014",
-        "description": [
-          "Built and maintained many AOL content-driven sites (AOL Industry, AOL Entertainment, AOL Music) using proprietary AMP platform (AOL Media Platform)."
-        ],
-        "location": "Dublin, Ireland",
-        "technologies": "PHP & twig, HTML5, JS, SCSS, GruntJS",
-        "title": "Software Engineer | Media and Vertical Engineering"
-      },
-      {
-        "company": "AOL Ireland",
-        "dateFrom": "October 2009",
-        "dateTo": "March 2010",
-        "description": [
-          "Built and develop International AOL Money&Finance web sites based on specific requirements gathered on regular weekly meetings and demos. Worked as a part of the international and global team located all over the world (US, India, UK, Germany)."
-        ],
-        "location": "Dublin, Ireland",
-        "technologies": "XHTML, CSS, PHP, XML, JavaScript, jQuery, AJAX, PhotoShop, Cross browser testing, SEO",
-        "title": "Web Technologist"
+        "title": "Senior Software Engineer"
       },
       {
         "company": "Version 1",
@@ -121,20 +130,10 @@
         ],
         "location": "Rijeka, Croatia",
         "title": "IT Consultant"
-      },
-      {
-        "company": "Freelance",
-        "dateFrom": "January 2000",
-        "dateTo": "May 2006",
-        "description": [
-          "Creation and maintenance of many Web sites and applications for corporate, non-profit and other clients. Performed the full spectrum of Web-related tasks, including rapid prototyping, design and layout, graphics creation and optimisation"
-        ],
-        "location": "Rijeka, Croatia",
-        "title": "Web Design & Development"
       }
     ],
     "profile": {
-      "description": "Front End developer with more than 15 years of experience and expertise in HTML, CSS, JS, SEO.",
+      "description": "Senior software engineer with 15+ years of experience delivering high traffic web products. Development of modern, responsive websites using modern stacks, as well as site deployment automation with CI/CD tools.",
       "email": "lukap2211@gmail.com",
       "github": "https://github.com/lukap2211",
       "gravatar": "https://s.gravatar.com/avatar/f09ca73d86b2b35e61b201cdebbec465?s=200",
@@ -152,71 +151,72 @@
       },
       {
         "rating": 10,
-        "skill": "Mobile First"
+        "skill": "Responsive Web Design"
       },
       {
         "rating": 10,
-        "skill": "Responsive Web Design "
+        "skill": "Agile Methodologies"
+      },
+      {
+        "rating": 10,
+        "skill": "HTML5"
+      },
+      {
+        "rating": 10,
+        "skill": "CSS"
       },
       {
         "rating": 9,
-        "skill": "Agile Methodologies "
+        "skill": "TypeScript"
       },
       {
         "rating": 9,
-        "skill": "Search Engine Optimisation"
-      },
-      {
-        "rating": 8,
-        "skill": "Process Automation "
-      },
-      {
-        "rating": 10,
-        "skill": "HTML5 "
-      },
-      {
-        "rating": 10,
-        "skill": "CSS "
+        "skill": "GraphQL"
       },
       {
         "rating": 9,
         "skill": "JavaScript "
       },
       {
-        "rating": 8,
-        "skill": "jQuery"
+        "rating": 9,
+        "skill": "ReactJS"
       },
       {
         "rating": 8,
-        "skill": "Node.js "
+        "skill": "NextJS"
       },
       {
-        "rating": 7,
-        "skill": "Express.js "
+        "rating": 8,
+        "skill": "Docker"
       },
       {
-        "rating": 6,
-        "skill": "AWS "
-      },
-      {
-        "rating": 6,
-        "skill": "Docker "
-      },
-      {
-        "rating": 5,
-        "skill": "Jenkins "
-      },
-      {
-        "rating": 5,
+        "rating": 8,
         "skill": "Kuberneties "
       },
       {
         "rating": 8,
-        "skill": "MySQL "
+        "skill": "Process Automation CI/CD"
+      },
+
+      {
+        "rating": 8,
+        "skill": "Jenkins"
       },
       {
-        "rating": 9,
-        "skill": "SQL"
+        "rating": 8,
+        "skill": "Postgress DB"
+      },
+      {
+        "rating": 7,
+        "skill": "AWS"
+      },
+      {
+        "rating": 6,
+        "skill": "AZURE"
+      },
+      {
+        "rating": 6,
+        "skill": "GCP"
       }
     ]
   }

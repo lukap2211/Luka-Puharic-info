@@ -24,15 +24,16 @@ const ExpCompany = styled.h3 `
   }
   `
 
-const ExpLocation = styled.div `
+const ExpLocation = styled.div`
   color: var(--light);
+  font-style: italic;
   @media (max-width: 600px) {
     font-size: 1em;
   }
-  `
+`;
 
 const ExpDescription = styled.p `
-  margin: 10px 0;
+  margin: 5px 0;
   `
 
 const ExpTechnologies = styled.p `
@@ -53,11 +54,11 @@ class Experience extends React.Component {
       }
     }
 
-    function hasTechnologies(technologies) {
-      if (technologies) {
-        return <ExpTechnologies>Technologies: {technologies}</ExpTechnologies>
-      }
-    }
+    // function hasTechnologies(technologies) {
+    //   if (technologies) {
+    //     return <ExpTechnologies>Technologies: {technologies}</ExpTechnologies>
+    //   }
+    // }
 
     return (
       <ExpWrap>
@@ -68,7 +69,7 @@ class Experience extends React.Component {
         <ExpCompany>{company}</ExpCompany>
         <ExpLocation>{title}</ExpLocation>
         {hasDescriptions(description)}
-        {hasTechnologies(technologies)}
+        {/* {hasTechnologies(technologies)} */}
 
       </ExpWrap>
     )
